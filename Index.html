@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="" charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>BluwaveCRM - Home</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style type="text/css">
+        #WebChartControl1_IMG {
+            max-width: 280px;
+        }
+
+        h1, h21, h3, h4, h5, h6 {
+            color: black !important;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            align-items: center;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .underline {
+            text-decoration: underline !important;
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color: #b0e0e6">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center p-0">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <span class="d-none d-lg-block p-2">
+                    <img style="width:100px" src="https://bluwavecrm.co.za/Images/HeaderLogo.jpg" alt="Logo" />
+                </span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="p-2" action="#">
+                <div class="input-group">
+                    <select class="form-control input-group-text border border-right-0" style="max-width:60px !important">
+                        <option>
+                            All
+                        </option>
+                        <option>
+                            Appointment
+                        </option>
+                        <option>
+                            Task
+                        </option>
+                        <option>
+                            Company
+                        </option>
+                        <option>
+                            Contact
+                        </option>
+                        <option>
+                            Lead
+                        </option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <button class="input-group-text bg-success text-white" id="basic-addon2">GO!</button>
+                </div>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-icon bg-primary circle p-1 m-1 text-white" href="#" title="Settings">
+                        <i class="bi  bi-gear-fill" style="position:absolute; left:14px; top:10px"></i>
+                    </a>
+                </li><!--End of getting started question mark-->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-icon bg-primary circle p-1 m-1 text-white" href="#" title="Expand Panel" data-bs-toggle="dropdown">
+                        <i class="bi bi-question" style="font-size:35px; position:absolute; left:7px; top:0px"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-footer">
+                            <a href="#" title="Getting Started">Getting Started</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#" title="Frequently asked questions">FAQs</a>
+                        </li>
+                    </ul>
+                </li><!--End of getting started question mark-->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon bg-primary circle  m-1 p-1 text-white" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell" style="position:absolute; left:14px; top:10px"></i>
+                        <span class="badge bg-primary badge-number border border-white">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>30 min. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-x-circle text-danger"></i>
+                            <div>
+                                <h4>Atque rerum nesciunt</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>1 hr. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-check-circle text-success"></i>
+                            <div>
+                                <h4>Sit rerum fuga</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>2 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-info-circle text-primary"></i>
+                            <div>
+                                <h4>Dicta reprehenderit</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Show all notifications</a>
+                        </li>
+
+                    </ul>
+                    <!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile align-items-center p-2" href="#" data-bs-toggle="dropdown">
+                        <div align="center">
+                            <nobr>
+                                <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                                <span class="d-block dropdown-toggle"></span>
+                            </nobr>
+                        </div>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Kevin Anderson</h6>
+                            <span>Web Designer</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#Home-nav" data-bs-toggle="collapse" href="/Home.aspx">
+                    <i class="bi bi-house-fill"></i><span>Home</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="Home-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="/Home.aspx">
+                            <i class="bi bi-circle"></i><span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Dashboard.aspx">
+                            <i class="bi bi-circle"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" onServerClick="userprofile">
+                            <i class="bi bi-circle"></i><span>Edit My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" onServerClick="sp">
+                            <i class="bi bi-circle"></i><span>Sales Performance</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" onServerClick="ap">
+                            <i class="bi bi-circle"></i><span>Active Pipeline</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- End Home Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#activities-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-calendar2-check"></i><span>Activities</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="activities-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="forms-elements.html">
+                            <i class="bi bi-circle"></i><span>Add New Activity</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms-layouts.html">
+                            <i class="bi bi-circle"></i><span>Dairy Planner</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms-editors.html">
+                            <i class="bi bi-circle"></i><span>To Do List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms-validation.html">
+                            <i class="bi bi-circle"></i><span>Send Eamil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms-validation.html">
+                            <i class="bi bi-circle"></i><span>Add New Cycle</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms-validation.html">
+                            <i class="bi bi-circle"></i><span>Cycle Planner</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Activities Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#leads-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-cash-coin"></i><span>Leads</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="leads-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="tables-general.html">
+                            <i class="bi bi-circle"></i><span>Create New Lead</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tables-data.html">
+                            <i class="bi bi-circle"></i><span>View Leads</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Tables Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#contacts-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-journal"></i>
+                    <i class="bi bi-person-fill" style="font-size:10px; position:relative; left:-23px"></i>
+                    <span style="position:relative; left:-23px">Contacts</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="contacts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="charts-chartjs.html">
+                            <i class="bi bi-circle"></i><span>Add New Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="charts-apexcharts.html">
+                            <i class="bi bi-circle"></i><span>View Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Charts Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#companies-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-buildings"></i><span>Companies</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="companies-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Add Company</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-remix.html">
+                            <i class="bi bi-circle"></i><span>View Companies</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-boxicons.html">
+                            <i class="bi bi-circle"></i><span>Contract Pricing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-boxicons.html">
+                            <i class="bi bi-circle"></i><span>Group Pricing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-boxicons.html">
+                            <i class="bi bi-circle"></i><span>View Cycles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-boxicons.html">
+                            <i class="bi bi-circle"></i><span>Price List</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-boxicons.html">
+                            <i class="bi bi-circle"></i><span>Generate Jobs</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Companies Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#opportunities-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-funnel-fill"></i><span>Opportunities</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="opportunities-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Add New Opportunity</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-remix.html">
+                            <i class="bi bi-circle"></i><span>View Opportunitues</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-boxicons.html">
+                            <i class="bi bi-circle"></i><span>New Quote</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Opportunies Nav -->
+
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#reports-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-bar-chart-fill"></i><span>Reports</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="reports-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>CRM Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-remix.html">
+                            <i class="bi bi-circle"></i><span>Push Report Setup</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Reports Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#system-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-gem"></i><span>System Setup</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="system-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>CRM Setup</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Administer Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Edit Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Imports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Quote Setup</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Pricelist Management</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Documents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Volume Pricing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>Workflow</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End System Setup Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#financials-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-wallet-fill"></i><span>Financials</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="financials-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>View Financials</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-remix.html">
+                            <i class="bi bi-circle"></i><span>Upload Financials</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-remix.html">
+                            <i class="bi bi-circle"></i><span>Forecasts</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Financials Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#lists-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-list-check"></i><span>List Manager</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="lists-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="icons-bootstrap.html">
+                            <i class="bi bi-circle"></i><span>View</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="icons-remix.html">
+                            <i class="bi bi-circle"></i><span>Company Address List</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Lists Nav -->
+
+
+        </ul>
+
+    </aside><!-- End Sidebar-->
+
+    <main id="main">
+        <div id="Content" class="Content">
+            <h2 class="text-white">Welcome to the test page</h2>
+        </div>
+    </main>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script type="text/javascript" src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script type="text/javascript" src="assets/vendor/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/quill/quill.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script type="text/javascript" src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
