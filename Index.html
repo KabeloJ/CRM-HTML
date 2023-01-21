@@ -550,11 +550,19 @@
 
     <main id="main">
         <div id="Content" class="Content">
-            <div class="row" align="center">
-                <div class="card">
-                    <h2>Welcome to the test page</h2>
+            <form method="post" action="./home.aspx" id="aspnetForm" class="row">
+                <div class="col-md-4">
+                    <div class="card text-black  p-0 shadow">
+                        <div class="form-group row p-2">
+                            <label class="col-4 p-2">Date Filter:</label>
+                            <div class="col-8">
+                                <input type="date" value="2023-01-21" class="form-control">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div><div class="row">
+            </form>
+            <div class="row">
             
             <!--Appointments-->
             <div class="col-md-4">
