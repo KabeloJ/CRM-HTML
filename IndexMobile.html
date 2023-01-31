@@ -1,0 +1,1270 @@
+<html lang="en" class="dxChrome dxWindowsPlatform dxWebKitFamily dxBrowserVersion-109"><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script><head><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_75-ViIXo"><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_69-ViIXo"><link rel="stylesheet" type="text/css" href="/DXR.axd?r=10_9-UiIXo">
+    <meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><title>
+	BluwaveCRM - Home
+</title><meta name="description"><meta name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon"><link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"><link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"><link href="assets/vendor/quill/quill.snow.css" rel="stylesheet"><link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet"><link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"><link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style type="text/css">
+        .btn-nav {
+            background-color: transparent;
+            border: none;
+            font-family: Open Sans, sans-serif !important;
+            font-size: inherit;
+            font-weight: 600;
+            color: #012970;
+        }
+
+            .btn-nav:hover {
+                color: #4154f1;
+            }
+
+        .li-nav {
+            padding: 10px 0px 10px 10px !important;
+        }
+
+        #ctl00_ContentPlaceHolder1_WebChartControl1 {
+            width: inherit !important;
+        }
+
+        #ctl00_ContentPlaceHolder1_WebChartControl1_IMG {
+            width: inherit !important;
+            max-width: 80%;
+        }
+
+        h1, h21, h3, h4, h5, h6 {
+            color: black !important;
+        }
+
+        .circle {
+            height: 50px;
+            width: 50px;
+            align-items: center;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .underline {
+            text-decoration: underline !important;
+        }
+
+        .toggle-btn-nav {
+            display: none;
+        }
+
+        @media (max-width:1380px) {
+            .toggle-btn-nav {
+                display: block !important;
+            }
+        }
+        @media (min-width: 1380px) {
+            .custom-nav {
+                flex-wrap: nowrap !important;
+                justify-content: flex-start  !important;
+            }
+        }
+        .custom-nav-link{
+            max-width:300px !important;
+        }
+        @media (min-width: 1381px){
+
+            #collaped-menu {
+                display:block !important;
+            }
+        }
+        @media (max-width: 1380px) {
+            #collaped-menu {
+                padding-top: 10px !important;
+                margin-top: 12px !important;
+                position: absolute;
+                z-index: 1000;
+                min-width: 349px;
+                max-width: 350px;
+                padding-left: 10px;
+                box-shadow:rgb(197 199 199 / 0.65)  6px 15px 10px 4px;
+                display:none;
+                height:100%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body style="background-color: #b0e0e6">
+    <form method="post" action="./home.aspx" id="aspnetForm">
+
+
+        <!-- ======= Header ======= -->
+        <header id="header" class="header fixed-top d-flex align-items-center p-0">
+
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="home.aspx" class="logo d-flex">
+                    <div style="width: inherit" align="center">
+                        <img style="width: inherit; max-width: 120px !important" src="assets/img/HeaderLogo.jpg" alt="Logo">
+                    </div>
+                </a>
+                <a class="navbar-brand toggle-btn-nav" id="btnToggler" href="#" onclick="Toggle(true)">
+                    <i class="bi bi-list toggle-sidebar-btn"></i>
+                </a>
+            </div>
+            <!-- End Logo -->
+
+            <div class="search-bar">
+                
+                <div class="input-group">
+                    <select name="ctl00$QuickSearch" onchange="javascript:setTimeout('__doPostBack(\'ctl00$QuickSearch\',\'\')', 0)" id="ctl00_QuickSearch" class="form-control input-group-text border border-right-0" style="max-width: 135px !important">
+	<option selected="selected" value="Please Select...">Please Select...</option>
+	<option value="Account Number">Account Number</option>
+	<option value="Companies">Companies</option>
+	<option value="Contacts">Contacts</option>
+	<option value="Leads">Leads</option>
+	<option value="Name of Opportunity">Name of Opportunity</option>
+	<option value="Opportunities by Company">Opportunities by Company</option>
+	<option value="Quote/Opp No.">Quote/Opp No.</option>
+
+</select>
+                    <input name="ctl00$NavSearch" type="text" id="ctl00_NavSearch" class="form-control" placeholder="Search..." aria-describedby="basic-addon2">
+                    <button class="input-group-text bg-success text-white" id="basic-addon2">GO!</button>
+                </div>
+                
+            </div>
+            <!-- End Search Bar -->
+
+            <nav class="header-nav ms-auto">
+                <ul class="d-flex align-items-center">
+
+                    <li class="nav-item d-block d-lg-none">
+                        <a class="nav-link nav-icon search-bar-toggle " href="#">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </li>
+                    <!-- End Search Icon-->
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-icon bg-primary circle p-1 m-1 text-white" href="#" title="Expand Panel" data-bs-toggle="dropdown">
+                            <i class="bi bi-question" style="font-size: 35px; position: absolute; left: 7px; top: 0px"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                            <li class="dropdown-footer">
+                                <a href="/GettingStarted.aspx" title="Getting Started">Getting Started</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="#" title="Frequently asked questions">FAQs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--End of getting started question mark-->
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link nav-icon bg-primary circle  m-1 p-1 text-white" href="#" data-bs-toggle="dropdown">
+                            <i class="bi bi-bell" style="position: absolute; left: 14px; top: 10px"></i>
+                            <span class="badge bg-primary badge-number border border-white">4</span>
+                        </a>
+                        <!-- End Notification Icon -->
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                            <li class="dropdown-header">You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-exclamation-circle text-warning"></i>
+                                <div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>30 min. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-x-circle text-danger"></i>
+                                <div>
+                                    <h4>Atque rerum nesciunt</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>1 hr. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-check-circle text-success"></i>
+                                <div>
+                                    <h4>Sit rerum fuga</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>2 hrs. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li class="notification-item">
+                                <i class="bi bi-info-circle text-primary"></i>
+                                <div>
+                                    <h4>Dicta reprehenderit</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="dropdown-footer">
+                                <a href="#">Show all notifications</a>
+                            </li>
+
+                        </ul>
+                        <!-- End Notification Dropdown Items -->
+
+                    </li>
+                    <!-- End Notification Nav -->
+
+                    <li class="nav-item dropdown p-0">
+
+                        <a class="nav-link nav-profile align-items-center p-1" href="#" data-bs-toggle="dropdown">
+                            <table>
+                                <tbody><tr>
+                                    <td width="90%">
+                                        <img src="assets/img/Default.png" alt="Profile" class="rounded-circle">
+                                        <div style="font-size: 10px" class="small p-0 m-0">
+                                            K. Anderson
+                                        </div>
+                                    </td>
+                                    <td width="10%">
+                                        <span class="d-block dropdown-toggle"></span>
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </a>
+                        <!-- End Profile Iamge Icon -->
+
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                            <li class="dropdown-header">
+                                <h6>Kevin Anderson</h6>
+                                <span>Web Designer</span>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>My Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                            </li><li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                    <span>Log Out</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <!-- End Profile Dropdown Items -->
+                    </li>
+                    <!-- End Profile Nav -->
+
+                </ul>
+            </nav>
+            <!-- End Icons Navigation -->
+
+        </header>
+        <!-- End Header -->
+            <br>
+            <br>
+            <nav class="navbar navbar-expand-lg custom-nav bg-white" id="collaped-menu">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#Quick-Create" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-plus" style="font-size: large"></i><span>Quick Create</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="Quick-Create" id="Quick-Create" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <input type="submit" name="ctl00$btnTest" value="Appointment" id="ctl00_btnTest" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl18" value="Task" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl19" value="Company" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl20" value="Contact" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl21" value="Lead" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl22" value="Opportunity" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl23" value="Quote" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl24" value="Send Email" class="btn-nav">
+                                    </li>
+                                    <li>
+                                        <input type="submit" name="ctl00$ctl25" value="Cycle" class="btn-nav">
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#Home-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-house-fill"></i><span>Home</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="Home-nav" id="Home-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="/Home.aspx" class="btn-nav">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Dashboard.aspx" class="btn-nav">
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-nav" href="javascript:__doPostBack('ctl00$ctl26','')">
+                                            <span>Edit My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-nav" href="javascript:__doPostBack('ctl00$ctl27','')">
+                                            <span>Sales Performance</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn-nav" href="javascript:__doPostBack('ctl00$ctl28','')">
+                                            <span>Active Pipeline</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#activities-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-calendar2-check"></i><span>Activities</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="activities-nav" id="activities-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="forms-elements.html" class="btn-nav">
+                                            <span>Add New Activity</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/Appointment.aspx" class="btn-nav">
+                                            <span>Dairy Planner</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-editors.html" class="btn-nav">
+                                            <span>To Do List</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-validation.html" class="btn-nav">
+                                            <span>Send Eamil</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-validation.html" class="btn-nav">
+                                            <span>Add New Cycle</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forms-validation.html" class="btn-nav">
+                                            <span>Cycle Planner</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#leads-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-cash-coin"></i><span>Leads</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="leads-nav" id="leads-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="/NewLeads.aspx" class="btn-nav">
+                                            <span>Create New Lead</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/ViewLeads.aspx" class="btn-nav">
+                                            <span>View Leads</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#contacts-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-journal"></i>
+                                <i class="bi bi-person-fill" style="font-size: 10px; position: relative; left: -17px"></i>
+                                <span style="position: relative; left: -15px">Contacts</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="contacts-nav" id="contacts-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="charts-chartjs.html" class="btn-nav">
+                                            <span>Add New Contact</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="charts-apexcharts.html" class="btn-nav">
+                                            <span>View Contacts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#companies-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-buildings"></i><span>Companies</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="companies-nav" id="companies-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Add Company</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-remix.html" class="btn-nav">
+                                            <span>View Companies</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-boxicons.html" class="btn-nav">
+                                            <span>Contract Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-boxicons.html" class="btn-nav">
+                                            <span>Group Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-boxicons.html" class="btn-nav">
+                                            <span>View Cycles</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-boxicons.html" class="btn-nav">
+                                            <span>Price List</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-boxicons.html" class="btn-nav">
+                                            <span>Generate Jobs</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#opportunities-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-funnel-fill"></i><span>Opportunities</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="opportunities-nav" id="opportunities-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Add New Opportunity</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-remix.html" class="btn-nav">
+                                            <span>View Opportunitues</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-boxicons.html" class="btn-nav">
+                                            <span>New Quote</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#reports-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-bar-chart-fill"></i><span>Reports</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="reports-nav" id="reports-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>CRM Reports</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-remix.html" class="btn-nav">
+                                            <span>Push Report Setup</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#system-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-gem"></i><span>System Setup</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="system-nav" id="system-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>CRM Setup</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Administer Users</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Edit Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Imports</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Quote Setup</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Pricelist Management</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Documents</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Volume Pricing</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>Workflow</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#financials-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-wallet-fill"></i><span>Financials</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="financials-nav" id="financials-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>View Financials</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-remix.html" class="btn-nav">
+                                            <span>Upload Financials</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-remix.html" class="btn-nav">
+                                            <span>Forecasts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed custom-nav-link" data-bs-target="#lists-nav" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-list-check"></i><span>List Manager</span><span style="float:right"><i class="bi bi-chevron-down ms-auto"></i></span>
+                            </a>
+                            <div class="dropdown-menu nav-content collapse" aria-labelledby="lists-nav" id="lists-nav" data-bs-parent="#navbarNavDropdown">
+                                <ul class="p-4">
+                                    <li>
+                                        <a href="icons-bootstrap.html" class="btn-nav">
+                                            <span>View</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons-remix.html" class="btn-nav">
+                                            <span>Company Address List</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        <main id="main" class="overflow-auto pt-0 mt-2">
+            <div id="Content" class="Content">
+                
+            <div class="col-md-4">
+                <div class="card text-black  p-0 shadow">
+                    <div class="form-group row p-2">
+                        <label class="col-4 p-2">Date Filter:</label>
+                        <div class="col-8">
+                            <input name="ctl00$ContentPlaceHolder1$DateFilter" type="date" value="2023-01-31" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ContentPlaceHolder1$DateFilter\',\'\')', 0)" onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;" id="ctl00_ContentPlaceHolder1_DateFilter" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            
+            <!--Appointments-->
+            <div class="col-md-4">
+                
+            <div class="card text-black  p-0 shadow">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                            <div class="col-md-1">
+                                <span class="border bg-danger circle">
+                                    <i class="bi bi-calendar-check text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-11" align="right">
+                                <h5><nobr><strong>Appointments for <span id="ctl00_ContentPlaceHolder1_lblDay">Today</span></strong></nobr></h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                    <!--========================================================Home Activities===============================================-->
+                    <table class="table table-responsive table-borderless table-hover table-sm small">
+                        <tbody>
+                            
+                            <tr>
+                                <td width="100%" align="center">
+                                    No data to display
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-footer  border-top border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="dasd" class="underline"><nobr>Go to dairy planner</nobr></a>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-4">
+                            <a href="adasd" class="underline"><nobr>To Do List</nobr></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!--Tasks-->
+            <div class="col-md-4">
+                
+            <div class="card text-black  p-0 shadow">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                            <div class="col-1">
+                                <span class="border circle" style="background-color:orangered">
+                                    <i class="bi bi-clipboard2-check text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                </span>
+                            </div>
+                            <div class="col-11" align="right">
+                                <h5><nobr><strong>Tasks for <span id="ctl00_ContentPlaceHolder1_lblDay2">Today</span></strong></nobr></h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                    <!--========================================================Home Activities===============================================-->
+                    <table class="table table-responsive table-borderless table-hover table-sm small">
+                        <tbody>
+                            
+                            <tr>
+                                <td width="100%" align="center">
+                                    No data to display
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="card-footer border-top border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="dasd" class="underline"><nobr>Go to dairy planner</nobr></a>
+                        </div>
+                        <div class="col-2"></div>
+                        <div class="col-4">
+                            <a href="adasd" class="underline"><nobr>To Do List</nobr></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="col-md-4">
+            <!--Recent Opportunities-->
+            <div class="card text-black  p-0 shadow">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                            <div class="col-1">
+                                <span class="border bg-warning circle">
+                                    <i class="bi bi-funnel-fill text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                </span>
+                            </div>
+                            <div class="col-11" align="right">
+                                <h5><nobr><strong>Recent Opportunities</strong></nobr></h5>
+                            </div>
+                    </div>
+                </div>
+                 <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                    <!--========================================================Home Opportunities===============================================-->
+                    <table class="table table-responsive table-borderless table-hover table-sm small">
+                        <tbody>
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company Bluwave</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Products"> 1NO CONTACT BLOCK</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company Bluwave</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Products">ART.283-5.0 MOD TO GSA.283-5-.0(5154-5017) FIRE COATED</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company Bluwave</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Products">ART.283-5.0 MOD TO GSA.283-5-.0(5154-5017) FIRE COATED</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company Bluwave</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Products"> 1NO CONTACT BLOCK</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company Bluwave</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Products">t5656</a>
+                                </td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                
+                </div>
+                 <div class="card-footer border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="/ViewOpportunities.aspx" class="underline"><nobr>Go to Opportunities</nobr></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="col-md-4">
+            <div class="card text-black  p-0 shadow m-2">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                        <div class="col-1">
+                            <span class="border  circle" style="background-color:#03dbfc">
+                                <i class="bi  bi-currency-exchange text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                            </span>
+                        </div>
+                        <div class="col-11" align="right">
+                            <h5><nobr><strong>New Leads</strong></nobr></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                    <!--========================================================Home Leads===============================================-->
+                    <table class="table table-responsive table-borderless table-hover table-sm small">
+                        <tbody>
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">BW test7</a>
+                                </td>
+                                <td>
+                                    S LO
+                                </td>
+                                <td>
+                                    Active Lead
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">Spices 12345</a>
+                                </td>
+                                <td>
+                                    Peter Jones
+                                </td>
+                                <td>
+                                    Active Lead
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">Spices</a>
+                                </td>
+                                <td>
+                                    freddie Hirch
+                                </td>
+                                <td>
+                                    Active Lead
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test 5678io</a>
+                                </td>
+                                <td>
+                                    test 765432 qwertre
+                                </td>
+                                <td>
+                                    Active Lead
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">Maccy and son</a>
+                                </td>
+                                <td>
+                                    Fred Maccy
+                                </td>
+                                <td>
+                                    Qualified Converted
+                                </td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="card-footer  border-bottom border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="/ViewLeads.aspx" class="underline"><nobr>Go to Leads</nobr></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="col-md-4">
+                
+            <div class="card text-black  p-0 shadow m-2">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                            <div class="col-1">
+                                <span class="border bg-primary circle">
+                                    <i class="bi bi-buildings text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                </span>
+                            </div>
+                            <div class="col-11" align="right">
+                                <h5><nobr><strong>Recent Companies</strong></nobr></h5>
+                            </div>
+                    </div>
+                </div>
+              <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                    <!--========================================================Home Companies===============================================-->
+                    <table class="table table-responsive table-borderless table-hover table-sm small">
+                        <tbody>
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">freddy test</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test 8909890</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test mobuke 7667</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test Mobile new 88</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test mobile</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">Training Sheena USD2</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test 99009900</a>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test 13131313</a>
+                                </td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="card-footer border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="/CompaniesList.aspx" class="underline"><nobr>Go to Companies</nobr></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        
+            <div class="col-md-4">
+                 <!--Pipeline Section-->
+            <div class="card text-black  p-0 shadow m-2">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                            <div class="col-1">
+                                <span class="border bg-success circle">
+                                    <i class="bi  bi-cash-coin text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                </span>
+                            </div>
+                            <div class="col-11" align="right">
+                                <h5><nobr><strong>Pipeline For Jan</strong></nobr></h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="card-body p-1">
+                    
+                <script id="dxis_850359789" src="/DXR.axd?r=1_12-ViIXo" type="text/javascript"></script><script id="dxis_1871996702" src="/DXR.axd?r=1_13-ViIXo" type="text/javascript"></script><script id="dxis_8442964" src="/DXR.axd?r=1_252-ViIXo" type="text/javascript"></script><script id="dxis_1901384547" src="/DXR.axd?r=1_24-ViIXo" type="text/javascript"></script><script id="dxis_1086471020" src="/DXR.axd?r=1_65-ViIXo" type="text/javascript"></script><script id="dxis_1300577132" src="/DXR.axd?r=1_15-ViIXo" type="text/javascript"></script><script id="dxis_285709785" src="/DXR.axd?r=1_16-ViIXo" type="text/javascript"></script><script id="dxis_1717493786" src="/DXR.axd?r=10_1-UiIXo" type="text/javascript"></script><script id="dxis_131206869" src="/DXR.axd?r=10_2-UiIXo" type="text/javascript"></script><script id="dxis_890430044" src="/DXR.axd?r=10_3-UiIXo" type="text/javascript"></script><script id="dxis_843375877" src="/DXR.axd?r=10_0-UiIXo" type="text/javascript"></script><script id="dxis_991186593" src="/DXR.axd?r=10_4-UiIXo" type="text/javascript"></script><script id="dxis_778991085" src="/DXR.axd?r=1_22-ViIXo" type="text/javascript"></script><script id="dxis_1800627998" src="/DXR.axd?r=1_23-ViIXo" type="text/javascript"></script><div id="ctl00_ContentPlaceHolder1_WebChartControl1" onmousemove="ASPx.chartMouseMove(event, 'ctl00_ContentPlaceHolder1_WebChartControl1')" onclick="ASPx.chartClick(event, 'ctl00_ContentPlaceHolder1_WebChartControl1')" style="height:200px;width:350px;margin-left: 13px">
+	<img id="ctl00_ContentPlaceHolder1_WebChartControl1_IMG" src="/DXB.axd?DXCache=c77d06ad-335c-fa11-dd7b-dc7405fdad7a" alt="The chart showing Series 1 series." style="display:block;">
+</div><table id="ctl00_ContentPlaceHolder1_WebChartControl1_LP" class="dxLoadingPanel dxlpLoadingPanel" cellspacing="0" cellpadding="0" style="border-collapse:collapse;left:0px;top:0px;z-index:30000;display:none;">
+	<tbody><tr>
+		<td class="dx" style="padding-right:0px;"><img class="dxlp-loadingImage dxlp-imgPosLeft" src="/DXR.axd?r=1_90-ViIXo" alt="" align="middle"></td><td class="dx" style="padding-left:0px;"><span id="ctl00_ContentPlaceHolder1_WebChartControl1_TL">Loading…</span></td>
+	</tr>
+</tbody></table><script id="dxss_1214296237" type="text/javascript" data-executed="true">
+<!--
+ASPx.createControl(ASPxClientWebChartControl,'ctl00_ContentPlaceHolder1_WebChartControl1','',{'encodeHtml':false,'callBack':function(arg) { WebForm_DoCallback('ctl00$ContentPlaceHolder1$WebChartControl1',arg,ASPx.Callback,'ctl00_ContentPlaceHolder1_WebChartControl1',ASPx.CallbackError,true); },'uniqueID':'ctl00$ContentPlaceHolder1$WebChartControl1','stateObject':{'callbackState':''}},null,function(){
+this.LoadHitInfo(JSON.parse("[{\"hi\":0,\"r\":{\"t\":\"R\",\"r\":[1,1,349,199]}}]"));
+this.InitObjectModel(JSON.parse("{\"s\":[{\"n\":\"Series 1\",\"v\":\"Funnel3D\",\"as\":\"Numerical\"}],\"l\":{\"n\":\"\"},\"hi\":0,\"an\":\"Chameleon\",\"pn\":\"Default\",\"spt\":true}"));
+});
+
+//-->
+</script>
+
+                
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="row">
+            
+            
+        
+            
+            <!--Quote Approvals Section-->
+            <div class="col-md-4">
+                <div class="card text-black  p-0 shadow m-2">
+                <div class="card-header border-bottom border-dark">
+                    <div class="row">
+                            <div class="col-md-1">
+                                <span class="border bg-primary circle">
+                                    <i class="bi bi-card-checklist text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-11" align="right">
+                                <h5><nobr><strong>Quote Approvals Required</strong></nobr></h5>
+                            </div>
+                    </div>
+                </div>
+              <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                    <!--========================================================Home Companies===============================================-->
+                    <table class="table table-responsive table-borderless table-hover table-sm small">
+                        <tbody>
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">Train Tania</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Quote">2546-4</a>
+                                </td>
+                                <td>
+                                    Stuart Lowe GM (Full)  test
+                                </td>
+                                <td>
+                                    
+                                    <input type="checkbox" disabled="disabled" name="Unknown">
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company delete 456</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Quote">2512</a>
+                                </td>
+                                <td>
+                                    Stuart Lowe GM (Full)  test
+                                </td>
+                                <td>
+                                    
+                                    <input type="checkbox" disabled="disabled" name="Unknown">
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company delete 456</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Quote">2511</a>
+                                </td>
+                                <td>
+                                    Stuart Lowe GM (Full)  test
+                                </td>
+                                <td>
+                                    
+                                    <input type="checkbox" disabled="disabled" name="Unknown">
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td>
+                                    <a href="#" class="underline" title="Company">test company delete 456</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="underline" title="Quote">2510</a>
+                                </td>
+                                <td>
+                                    Stuart Lowe GM (Full)  test
+                                </td>
+                                <td>
+                                    
+                                    <input type="checkbox" disabled="disabled" name="Unknown">
+                                </td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                
+                </div>
+                <div class="card-footer  border-bottom border-dark">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="/ViewOpportunities.aspx?Approvals=1" class="underline"><nobr>Go to Approvals</nobr></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+            
+            <!--GP Pipeline Section-->
+            <div class="col-md-4">
+                <div class="card text-black  p-0 shadow m-2">
+                    <div class="card-header border-bottom border-dark">
+                        <div class="row">
+                                <div class="col-md-1">
+                                    <span class="border bg-success circle">
+                                        <i class="bi bi-cash-coin text-white" style="font-size:25px; position:absolute; left:27px; top:20px"></i>
+                                    </span>
+                                </div>
+                                <div class="col-md-11" align="right">
+                                    <h5><nobr><strong>GP Pipeline for Jan</strong></nobr></h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="card-body overflow-auto" style="min-height:150px; max-height:150px;">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+            </div>
+        </main>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+WebForm_InitCallback();//]]>
+</script>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script type="text/javascript" src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script type="text/javascript" src="assets/vendor/echarts/echarts.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/quill/quill.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script type="text/javascript" src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        function Toggle(val) {
+            if (val == true) {
+                document.getElementById("navbarNavDropdown").setAttribute("class", "navbar-collapse");
+                document.getElementById("collaped-menu").setAttribute("style", "display:block !important;");
+                document.getElementById("btnToggler").setAttribute("onclick", "Toggle(false)");
+            }
+            else {
+                document.getElementById("navbarNavDropdown").setAttribute("class", "collapse navbar-collapse");
+                if (window.innerWidth < 1380) {
+                    document.getElementById("collaped-menu").setAttribute("style", "display:none !important;");
+                }
+                else {
+                    document.getElementById("collaped-menu").setAttribute("style", "display:block !important;");
+                }
+                document.getElementById("btnToggler").setAttribute("onclick", "Toggle(true)");
+            }
+        }
+
+        function ListenToMedia(x) {
+            if (x.matches) {
+                document.getElementById("collaped-menu").setAttribute("style", "display:block !important;");
+            }
+            else {
+
+                document.getElementById("collaped-menu").removeAttribute("style");
+            }
+        }
+
+        var x = window.matchMedia("(min-width: 1380px)")
+        ListenToMedia(x)
+        x.addListener(ListenToMedia)
+    </script>
+
+
+
+
+     </body></html>
